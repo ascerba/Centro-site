@@ -1,0 +1,170 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+/* Standard elements */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    /*background-image: url("images/centro_milwaukee_street_view.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;*/
+}
+
+footer {
+    text-align: center;
+}
+
+footer address, header address {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20%;
+}
+
+footer address span, header address span {
+    flex: 30%;
+    margin: 10px 5px 0 5px;
+    white-space: nowrap;
+}
+
+main {
+    max-width: 60%;
+    margin: 20px 20%;
+    padding: 1px 25px 25px 25px;
+    background-color: white;
+    /*border-radius: 5px;*/
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+}
+
+hr {
+    color: lightgray;
+}
+
+h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p {
+    margin-left: 15px;
+}
+
+address {
+    font-style: normal;
+}
+
+/*
+header address {
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
+.head_info {
+    margin: 0 auto;
+    padding: 1px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    max-width: fit-content;
+}
+*/
+
+/* Maps */
+.split {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.split div {
+    flex: 50%;
+    max-width: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+.split div iframe {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+/* Language button */
+.button {
+    padding: 8px 25px;
+    background-color: rgb(53, 81, 134);
+    color: white;
+    border-radius: 20px;
+    box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    background-color: rgb(47, 71, 116); /* Slightly darker for pressed effect */
+}
+
+.button img {
+    margin: 0 7px -3px 0;
+    max-width: 18px;
+}
+
+.action ul li a {
+    margin: 0;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .action ul li {
+    margin: 5px;
+    border: 2px transparent solid;
+  }
+  
+  .action ul li:hover {
+    border: 2px black solid;
+    border-radius: 6px;
+  }
+  
+  .action ul li a:hover {
+    color: black;
+  }
+
+/* Responsive changes */
+
+@media screen and (max-width: 736px) {
+    main {
+        max-width: 100%;
+        margin: 20px;
+    }
+    footer address {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .split div iframe {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .split div iframe {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
